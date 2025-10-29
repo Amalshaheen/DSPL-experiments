@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def unit_triangular_pulse(n, N):
     pulse = np.zeros_like(n, dtype=float)
-    condition = (n >= -N/2) & (n <= N/2)
+    condition = np.abs(n) <= N/2
     pulse[condition] = 1 - np.abs(n[condition]) / (N/2)
     return pulse
 
