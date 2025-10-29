@@ -46,6 +46,6 @@ N = 5
 T = 10
 pulse = triangular_pulse_train(n, N, T)
 plt.stem(n, pulse)
-plt.title("Triangular Pulse Train (N={}, T={})".format(N, T))
+plt.title("Triangular Pulse Train")
 plt.xlabel("n")
 plt.ylabel("Amplitude")
